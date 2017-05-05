@@ -13,6 +13,10 @@ body {
   display: flex;
   justify-content: center;
   .form-wrapper {
+    -webkit-transition: all 1s ease-in-out;
+    position: fixed;
+    top: 0;
+    z-index: 900;
     min-width: 800px;
     margin-top: 20px;
     flex-direction: column;
@@ -37,6 +41,10 @@ body {
       .progressbar {
         background-color: $blue;
         height: 100%;
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
       }
     }
     label {
