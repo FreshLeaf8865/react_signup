@@ -31,6 +31,7 @@ class MultiStepsForm extends Component {
     render() {
         const { page, title, progressWidth } = this.state;
         return (
+
           <div className="form-wrapper">
               <div className="form-header">
                   <h3>{title}</h3>

@@ -48,7 +48,6 @@ const validate = values => {
     } else {
        const userDate = new Date(`${values.birthdayYear}-${values.birthdayMonth}-${values.birthdayDay}`);
        const isAdult = moment(userDate, "YYYYMMDD").fromNow().split(' ')[0];
-       debugger;
        if (parseInt(isAdult) < 18) {
            errors.birthdayYear = 'Not Adult';
        } else if (isNaN(parseInt(isAdult))){
