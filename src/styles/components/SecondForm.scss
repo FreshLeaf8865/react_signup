@@ -1,0 +1,130 @@
+.date-wrapper {
+  display: flex;
+  border: 1px solid $darkGrey;
+  border-radius: 8px;
+  .field-wrapper-date {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    padding: 10px 0;
+    &:first-child {
+      border-right: 1px solid $darkGrey;
+    }
+    &:last-child {
+      border-left: 1px solid $darkGrey;
+    }
+    input {
+      width: 100%;
+      text-align: center;
+      border: none;
+      outline: none;
+      font-family: $Monserrat;
+      color: $grey;
+      text-transform: uppercase;
+      font-size: $font-size-default;
+    }
+  }
+}
+.second-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  .main-label {
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .error-date {
+    position: absolute;
+    margin-top: 40px;
+    color: red!important;
+  }
+  input[type="radio"] {
+    display:none;
+  }
+  input[type="radio"] + .label-gender,
+  input[type="radio"]:checked + .label-gender {
+    -webkit-transition:background-color 0.4s linear;
+    -o-transition:background-color 0.4s linear;
+    -moz-transition:background-color 0.4s linear;
+    transition:background-color 0.4s linear;
+  }
+  input[type="radio"]:checked + .label-gender{
+    background-color: $blue;
+    color: $white;
+  }
+  .field-wrapper-gender {
+    .active {
+      color: $white;
+      background-color: $lightBlue;
+    }
+    .active-first {
+      color: $white;
+      background-color: $lightBlue;
+      border-radius: 8px 0 0 8px;
+    }
+    .active-third {
+      color: $white;
+      background-color: $lightBlue;
+      border-radius: 0 8px 8px 0;
+    }
+    border: 1px solid $darkGrey;
+    border-radius: 8px;
+    display: flex;
+    label {
+      &:hover {
+        cursor: pointer;
+      }
+      padding: 10px 0;
+      width: 33.3%;
+      text-align: center;
+      &:first-child {
+        border-right: 1px solid $darkGrey;
+      }
+      &:last-child {
+        border-left: 1px solid $darkGrey;
+      }
+    }
+  }
+
+  .fixed-div {
+    margin-top: 50px;
+  }
+  .styled-select {
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+  }
+
+  .styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 29px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 268px;
+  }
+
+  .styled-select.slate {
+    background: url(/src/img/down-arrow.svg) no-repeat right center;
+    height: 34px;
+    width: 100%;
+    background-size: 20px;
+    background-position-x: 98%;
+  }
+
+  .styled-select.slate select {
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 34px;
+    width: 100%;
+    -webkit-appearance: none;
+  }
+  .special-label {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}

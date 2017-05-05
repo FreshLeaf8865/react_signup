@@ -1,0 +1,19 @@
+.first-form {
+  .field-wrapper {
+    label {
+      display: block;
+      margin-bottom: 15px;
+    }
+    .field-wrapper-input {
+      input {
+        border: none;
+        border-bottom: 1px solid $darkGrey;
+        margin-bottom: 20px;
+        width: 100%;
+        outline: none;
+        font-family: $Monserrat;
+        font-size: $font-size-default;
+      }
+    }
+  }
+}

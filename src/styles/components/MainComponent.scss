@@ -1,0 +1,104 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  font-family: $Monserrat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  .form-wrapper {
+    min-width: 800px;
+    margin-top: 20px;
+    flex-direction: column;
+    display: flex;
+    border-radius: 7px;
+    border: 1px solid $darkGrey;
+    box-shadow: $default-shadow;
+    .form-header {
+      text-align: center;
+      padding: 20px 0;
+      h3 {
+        margin: 0;
+        color: $lightBlue;
+        font-weight: 100;
+      }
+    }
+    .progressbar-wrapper {
+      height: 20px;
+      border-top: 1px solid $darkGrey;
+      border-bottom: 1px solid $darkGrey;
+      width: 100%;
+      .progressbar {
+        background-color: $blue;
+        height: 100%;
+      }
+    }
+    label {
+      font-size: $font-size-small;
+      text-transform: uppercase;
+      color: $grey
+    }
+    form {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      .error {
+        color: $red;
+      }
+      .field-wrapper {
+        padding: 0 20px;
+      }
+    }
+  }
+  .third-form {
+    text-align: center;
+    .done-img {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+    button {
+      color: $blue;
+      font-family: $Monserrat;
+      border: 1px solid $blue;
+      font-size: $font-size-small;
+      padding: 10px 30px;
+      background-color: $white;
+      border-radius: 8px;
+      margin-bottom: 60px;
+      &:hover {
+        cursor: pointer;
+      }
+      img {
+        width: 20px;
+        left: 10px;
+        vertical-align: bottom;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $laptop) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    width: 100%;
+    .form-wrapper {
+      min-width: 1px;
+      width: 100%;
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.footer-form {
+  margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid $darkGrey;
+  .next {
+    float: right;
+    padding-right: 25px;
+    color: $lightBlue;
+  }
+  .previous {
+    color: $grey;
+    padding-left: 10px;
+  }
+  button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: $font-size-small;
+    font-family: $Monserrat;
+    &:hover {
+      cursor: pointer;
+    }
+    img {
+      width: 20px;
+      vertical-align: bottom;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
