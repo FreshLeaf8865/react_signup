@@ -13,10 +13,6 @@ import ErrorPage from './containers/ErrorPage';
 
 const history = syncHistoryWithStore(hashHistory, store);
 
-let div = document.createElement('div');
-
-document.body.appendChild(div);
-
 ReactDOM.render(
     <Provider store={store}>
         <Router history={history}>
@@ -26,5 +22,5 @@ ReactDOM.render(
              </Route>
         </Router>
   </Provider>,
-  div
+  document.getElementById('main')
 );
