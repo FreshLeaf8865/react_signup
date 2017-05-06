@@ -14,10 +14,9 @@ body {
   justify-content: center;
   .form-wrapper {
     -webkit-transition: all 1s ease-in-out;
-    position: fixed;
     top: 0;
     z-index: 900;
-    min-width: 800px;
+    width: 400px;
     margin-top: 20px;
     flex-direction: column;
     display: flex;
@@ -39,7 +38,7 @@ body {
       border-bottom: 1px solid $darkGrey;
       width: 100%;
       .progressbar {
-        background-color: $blue;
+        background-color: $lightBlue;
         height: 100%;
         -webkit-transition: width 1s ease-in-out;
         -moz-transition: width 1s ease-in-out;
@@ -73,9 +72,9 @@ body {
       margin-bottom: 50px;
     }
     button {
-      color: $blue;
+      color: $lightBlue;
       font-family: $Monserrat;
-      border: 1px solid $blue;
+      border: 1px solid $lightBlue;
       font-size: $font-size-small;
       padding: 10px 30px;
       background-color: $white;

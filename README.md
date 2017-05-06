@@ -16,4 +16,4 @@ npm run dev
 4) For the unit test, comment 2 string in components/MainComponent.js and run :
 ```
 npm run test
-``
+```

@@ -19,7 +19,7 @@
       border: none;
       outline: none;
       font-family: $Monserrat;
-      color: $grey;
+      color: $lightBlack;
       text-transform: uppercase;
       font-size: $font-size-default;
     }
@@ -119,6 +119,7 @@
     border-radius: 8px;
     height: 34px;
     width: 100%;
+    color: $lightBlack;
     -webkit-appearance: none;
   }
   .special-label {

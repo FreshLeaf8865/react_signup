@@ -19,7 +19,7 @@ const validate = values => {
     if (!values.confirm) {
         errors.confirm = 'Required';
     } else if (values.confirm !== values.password) {
-        errors.confirm = 'Passwords must be compared';
+        errors.confirm = 'Passwords must be matched';
     }
 
     // Birthday day
