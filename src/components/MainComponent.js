@@ -1,5 +1,5 @@
 'use strict';
-require('../styles/main.scss');
+import '../assets/styles/main.scss'
 
 import React from 'react';
 

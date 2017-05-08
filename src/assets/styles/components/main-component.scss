@@ -5,23 +5,20 @@ html {
 body {
   margin: 0 auto;
   font-family: $Monserrat;
+  width: 100%;
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   .form-wrapper {
     -webkit-transition: all 1s ease-in-out;
     top: 0;
     z-index: 900;
     width: 400px;
-    margin-top: 20px;
-    flex-direction: column;
-    display: flex;
+    margin: 20px auto;
     border-radius: 7px;
-    border: 1px solid $darkGrey;
+    border: 1.5px solid $darkGrey;
     box-shadow: $default-shadow;
     .form-header {
       text-align: center;
@@ -33,7 +30,7 @@ body {
       }
     }
     .progressbar-wrapper {
-      height: 20px;
+      height: 10px;
       border-top: 1px solid $darkGrey;
       border-bottom: 1px solid $darkGrey;
       width: 100%;
@@ -72,9 +69,9 @@ body {
       margin-bottom: 50px;
     }
     button {
-      color: $lightBlue;
+      color: $blue;
       font-family: $Monserrat;
-      border: 1px solid $lightBlue;
+      border: 1px solid $blue;
       font-size: $font-size-small;
       padding: 10px 30px;
       background-color: $white;
@@ -95,17 +92,28 @@ body {
 
 @media screen and (max-width: $laptop) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: $mobile) {
   .container {
-    width: 100%;
     .form-wrapper {
-      min-width: 1px;
-      width: 100%;
-      margin: 20px;
+      width: 300px;
+      input {
+        font-size: 11px!important;
+      }
     }
+  }
+}
+
+.form-page-wrapper{
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity .4s ease-out;
+  will-change: opacity;
+  &.loading {
+    opacity: 0;
   }
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    publicPath: '/public/',
+    publicPath: '/',
     host: 'localhost',
-    port: 8085
+    port: 8080
 };

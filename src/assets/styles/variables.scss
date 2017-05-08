@@ -1,9 +1,8 @@
 // Colors
 $black: #000000;
-$lightBlack: #868686;
 $white: #ffffff;
 $darkGrey: #dddddd;
-$grey: #5d5d5d;
+$grey: #6f6b6b;
 $sidebarLink: #698095;
 $lightBlue: #4a90e2;
 $blue: #1b20ee;
@@ -23,9 +22,10 @@ $font-size-big: 1.125rem;         // 18px
 $font-size-big: 1.25rem;          // 20px
 
 //Shadow
-$default-shadow: 1px 1px 10px 0 #e1e3ed;
+$default-shadow: 0px 1px 1px #e1e3ed;
+
 
 //Media
 $laptop: 1200px;
 $table: 991px;
-$mobile: 768px;
+$mobile: 450px;

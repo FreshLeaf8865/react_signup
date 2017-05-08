@@ -1,7 +1,7 @@
 .date-wrapper {
   display: flex;
   border: 1px solid $darkGrey;
-  border-radius: 8px;
+  border-radius: 4px;
   .field-wrapper-date {
     display: flex;
     align-items: center;
@@ -19,15 +19,13 @@
       border: none;
       outline: none;
       font-family: $Monserrat;
-      color: $lightBlack;
+      color: $grey;
       text-transform: uppercase;
       font-size: $font-size-default;
     }
   }
 }
 .second-form {
-  padding-left: 20px;
-  padding-right: 20px;
   .main-label {
     text-align: center;
     display: block;
@@ -37,6 +35,9 @@
     position: absolute;
     margin-top: 40px;
     color: red!important;
+  }
+  .wrapper-point {
+    margin: 0 20px;
   }
   input[type="radio"] {
     display:none;
@@ -60,15 +61,15 @@
     .active-first {
       color: $white;
       background-color: $lightBlue;
-      border-radius: 8px 0 0 8px;
+      border-radius: 4px 0 0 4px;
     }
     .active-third {
       color: $white;
       background-color: $lightBlue;
-      border-radius: 0 8px 8px 0;
+      border-radius: 0 4px 4px 0;
     }
     border: 1px solid $darkGrey;
-    border-radius: 8px;
+    border-radius: 4px;
     display: flex;
     label {
       &:hover {
@@ -105,7 +106,7 @@
   }
 
   .styled-select.slate {
-    background: url(/src/img/down-arrow.svg) no-repeat right center;
+    background: url(../../img/down-arrow.svg) no-repeat right center;
     height: 34px;
     width: 100%;
     background-size: 20px;
@@ -116,16 +117,31 @@
     padding-left: 20px;
     border: 1px solid #ccc;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 4px;
     height: 34px;
     width: 100%;
-    color: $lightBlack;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .styled-select.slate select::-ms-expand {
+    display: none;
   }
   .special-label {
     display: block;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    .form-wrapper {
+      label {
+        font-size: 11px;
+      }
+
+    }
   }
 }

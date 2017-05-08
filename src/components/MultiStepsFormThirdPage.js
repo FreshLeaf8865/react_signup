@@ -1,13 +1,13 @@
 import React from 'react';
-import showResults from '../helpers/ShowResults';
+import showResults from '../helpers/showResult';
 
 const MultiStepsFormThirdPage = props => {
     return (
       <div className="third-form">
-          <img className="done-img" src="/src/img/done.png" alt=""/>
+          <img className="done-img" src={require('../assets/img/done.png')} alt="Done Logo"/>
           <button onClick={showResults}>
               Go to Dashboard
-              <img src="/src/img/right-arrow.svg" alt=""/>
+              <img src={require('../assets/img/right-arrow.svg')} alt=""/>
           </button>
       </div>
     );

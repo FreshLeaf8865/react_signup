@@ -1,5 +1,6 @@
 .first-form {
   .field-wrapper {
+    margin-bottom: 40px;
     label {
       display: block;
       margin-bottom: 15px;
@@ -8,9 +9,7 @@
       input {
         border: none;
         border-bottom: 1px solid $darkGrey;
-        margin-bottom: 20px;
         width: 100%;
-        color: $lightBlack;
         outline: none;
         font-family: $Monserrat;
         font-size: $font-size-default;

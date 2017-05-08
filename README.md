@@ -17,3 +17,9 @@ npm run dev
 ```
 npm run test
 ```
+5) For the launch application from server side :
+```
+npm run build
+npm run server
+```
+then see : localhost:8090
